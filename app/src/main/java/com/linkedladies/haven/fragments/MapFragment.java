@@ -102,7 +102,7 @@ public class MapFragment extends Fragment {
         mapViewHelper.setOnGraphicClickListener(new OnGraphicClickListener() {
             @Override
             public void onGraphicClick(Graphic graphic) {
-                disasterClickListener.onDisasterClicked(DisasterInfoFragment.newInstance("SF TechCrunch Disrupt Hackathon Fire", 138));
+                disasterClickListener.onDisasterClicked(DisasterInfoFragment.newInstance("SF TechCrunch Disrupt Hackathon Fire", 144));
             }
         });
     }

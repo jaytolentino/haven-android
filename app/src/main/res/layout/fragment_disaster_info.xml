@@ -72,7 +72,7 @@
             android:layout_alignBottom="@+id/ivThumb" />
 
         <TextView
-            android:text="3"
+            android:text="17"
             android:textSize="10sp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
