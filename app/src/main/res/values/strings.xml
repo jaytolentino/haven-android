@@ -1,3 +1,10 @@
 <resources>
+    <!-- App Info -->
     <string name="app_name">Haven</string>
+    <string name="title_activity_map">Map</string>
+
+    <!-- Android Studio Defaults -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_checkin">CheckinActivity</string>
 </resources>
