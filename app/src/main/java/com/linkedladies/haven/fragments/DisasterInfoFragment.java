@@ -6,18 +6,21 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.linkedladies.haven.R;
+import com.squareup.picasso.Picasso;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class DisasterInfoFragment extends Fragment {
 
-    private static final String TITLE = "title";
-    private static final String CHECKIN_COUNT = "checkinCount";
+    public static final String TITLE = "title";
+    public static final String CHECKIN_COUNT = "checkinCount";
 
+    @Bind(R.id.ivThumb) ImageView ivThumb;
     @Bind(R.id.tvTitle) TextView tvTitle;
     @Bind(R.id.tvCount) TextView tvCount;
 
@@ -53,7 +56,14 @@ public class DisasterInfoFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_disaster_info, container, false);
         ButterKnife.bind(this, rootView);
         tvTitle.setText(title);
-        tvCount.setText(checkinCount + " check-ins");
+        tvCount.setText(String.valueOf(checkinCount));
+
+        String url = "http://www.imagesource.com/Doc/IS0/Media/TR5/e/2/b/a/IS099ZP7C.jpg";
+        Picasso.with(getContext()).load(url).fit().centerCrop().into(ivThumb);
         return rootView;
+    }
+
+    public String getTitle() {
+        return title;
     }
 }

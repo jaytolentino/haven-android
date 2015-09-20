@@ -87,12 +87,12 @@ public class MapFragment extends Fragment {
     }
 
     private void addShelters() {
-        Drawable shelterIcon = getResources().getDrawable(R.drawable.route_destination);
+        Drawable shelterIcon = getResources().getDrawable(R.drawable.ic_map_marker_shelter);
         mapViewHelper.addMarkerGraphic(37.761, -122.394, null, null, null, shelterIcon, false, 0);
     }
 
     private void addDisasters() {
-        Drawable disasterIcon = getResources().getDrawable(R.drawable.route_destination);
+        Drawable disasterIcon = getResources().getDrawable(R.drawable.ic_map_marker_disaster);
         mapViewHelper.addMarkerGraphic(37.7598579, -122.3835949, null, null, null, disasterIcon, false, 0);
     }
 
@@ -102,7 +102,7 @@ public class MapFragment extends Fragment {
         mapViewHelper.setOnGraphicClickListener(new OnGraphicClickListener() {
             @Override
             public void onGraphicClick(Graphic graphic) {
-                disasterClickListener.onDisasterClicked(DisasterInfoFragment.newInstance("Disaster!!", 47));
+                disasterClickListener.onDisasterClicked(DisasterInfoFragment.newInstance("SF TechCrunch Disrupt Hackathon Fire", 138));
             }
         });
     }

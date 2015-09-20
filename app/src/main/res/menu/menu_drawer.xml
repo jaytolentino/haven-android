@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_1"
+        android:icon="@drawable/ic_side_disaster"
+        android:title="Local Disasters" />
+    <item
+        android:id="@+id/nav_9"
+        android:icon="@drawable/ic_side_help"
+        android:title="Offer Help" />
+    <group
+        android:menuCategory="container"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_3"
+            android:enabled="false"
+            android:title="Resource Filters " />
+        <item
+            android:id="@+id/nav_4"
+            android:icon="@drawable/ic_side_medical"
+            android:title="Medical" />
+        <item
+            android:id="@+id/nav_5"
+            android:icon="@drawable/ic_side_shelter"
+            android:title="Shelter" />
+        <item
+            android:id="@+id/nav_6"
+            android:icon="@drawable/ic_side_water"
+            android:title="Water" />
+        <item
+            android:id="@+id/nav_7"
+            android:icon="@drawable/ic_side_food"
+            android:title="Food" />
+    </group>
+</menu>

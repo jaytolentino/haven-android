@@ -7,4 +7,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_checkin">CheckinActivity</string>
+
+    <plurals name="checkin">
+        <item quantity="one">%d Person Checked In</item>
+        <item quantity="other">%d People Checked In</item>
+    </plurals>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

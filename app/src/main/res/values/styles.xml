@@ -1,8 +1,11 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@color/app_primary</item>
+        <item name="colorAccent">@color/app_accent</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="19">true</item>
     </style>
 
 </resources>

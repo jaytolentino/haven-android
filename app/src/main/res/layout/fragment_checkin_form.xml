@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_medium"
+    android:focusableInTouchMode="true"
+    tools:context="com.linkedladies.haven.fragments.CheckinFormFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_person_gray"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/spacing_small"
+            android:paddingRight="@dimen/spacing_medium"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/tvStatusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="You are a "
+            android:textColor="#aaaaaa"
+            android:gravity="center_vertical" />
+
+        <Spinner
+            android:id="@+id/spPersonType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/person_type_entries"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPersonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:paddingTop="@dimen/spacing_small"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small">
+
+        <ImageView
+            android:id="@+id/ivAddPerson"
+            android:src="@drawable/ic_person_add_gray"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/spacing_medium"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/tvAddPerson"
+            android:textSize="16sp"
+            android:textColor="#aaaaaa"
+            android:text="Add Person..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAddPersonForm"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/spacing_small"
+        android:animateLayoutChanges="true"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilAddPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etAddVPerson"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Add Name"
+                android:gravity="center_vertical" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="75dp">
+
+            <Spinner
+                android:id="@+id/spAddedPersonType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/person_type_entries"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:gravity="center" />
+
+            <CheckBox
+                android:id="@+id/cbInjured"
+                android:text="Injured?"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddPerson"
+            android:text="Add"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/spacing_small">
+
+        <ImageView
+            android:src="@drawable/ic_warning_gray"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/spacing_medium"
+            android:scaleType="fitCenter"
+            android:paddingLeft="@dimen/spacing_small" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="75dp">
+
+            <TextView
+                android:id="@+id/tvRequestHelpLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:textColor="#aaaaaa"
+                android:text="Request Help"
+                android:gravity="center" />
+
+            <Spinner
+                android:id="@+id/spRequestHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/spacing_small"
+                android:paddingLeft="@dimen/spacing_xsmall"
+                android:entries="@array/request_help_entries"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

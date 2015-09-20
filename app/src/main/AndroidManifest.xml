@@ -8,17 +8,14 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".activities.MapActivity"
-            android:label="@string/title_activity_map" >
+            android:name=".activities.MapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.CheckinActivity"
-            android:label="@string/title_activity_checkin" >
+            android:name=".activities.CheckinActivity">
         </activity>
     </application>
 

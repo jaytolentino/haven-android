@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="person_type_entries">
+        <item>Victim</item>
+        <item>Volunteer</item>
+        <item>First Responder</item>
+    </string-array>
+    <string-array name="request_help_entries">
+        <item>n/a</item>
+        <item>Medical Attention</item>
+        <item>Shelter</item>
+        <item>Water</item>
+        <item>Food</item>
+    </string-array>
+</resources>
